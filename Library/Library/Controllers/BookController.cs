@@ -12,20 +12,39 @@ namespace Library.Controllers
         // GET: Book
         public ActionResult Index()
         {
-            List<Book> listOfBooks = new List<Book>();
+
             BookContext db = new BookContext();
             using (db)
             {
-                db.Books.Add(new Book() { Name = "C#", Description = "Programming Book", Price = 240 });
-                db.SaveChanges();
+                //db.Books.Add(new Book() { Name = "C#", Description = "Programming Book", Price = 240 });
+                //db.SaveChanges();
                 var books = from b in db.Books
                             select b;
-                listOfBooks.AddRange(books);
-            }         
-            
-            
-            ViewBag.Message = "Страница отображения книг";
-            return View(listOfBooks);
+                ViewBag.Message = "Страница отображения книг";
+                return View(db.Books.ToList());
+            }
         }
+        [HttpGet]
+        public ActionResult New()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult New(Book book)
+        {
+            BookContext db = new BookContext();
+            using (db)
+            {
+                db.Books.Add(book);
+                db.SaveChanges();
+                return View("Index");
+            }
+            
+        }
+
     }
 }
+
+
+        
+    
