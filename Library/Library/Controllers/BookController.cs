@@ -16,9 +16,12 @@ namespace Library.Controllers
             using (db)
             {
                 db.Books.Add(new Book() { Name = "C#", Description = "Programming Book", Price = 240 });
+                db.SaveChanges();
             }
-                ViewBag.Message = "Страница отображения книг";
-            return View();
+            var books = from b in db.Books
+                        select b;
+            ViewBag.Message = "Страница отображения книг";
+            return View(books);
         }
     }
 }
