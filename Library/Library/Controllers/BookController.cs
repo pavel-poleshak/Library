@@ -11,6 +11,7 @@ namespace Library.Controllers
         // GET: Book
         public ActionResult Index()
         {
+            ViewBag.Message = "Страница отображения книг";
             return View();
         }
     }
