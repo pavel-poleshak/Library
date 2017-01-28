@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,12 @@ namespace Library.Controllers
         // GET: Book
         public ActionResult Index()
         {
-            ViewBag.Message = "Страница отображения книг";
+            BookContext db = new BookContext();
+            using (db)
+            {
+                db.Books.Add(new Book() { Name = "C#", Description = "Programming Book", Price = 240 });
+            }
+                ViewBag.Message = "Страница отображения книг";
             return View();
         }
     }
