@@ -8,9 +8,8 @@ namespace Library.Models
 {
     public class BookContext:DbContext
     {
-        public BookContext() :base ("BookContext")
-        {
+        public BookContext() :base ("BookContext") { }
 
-        }
+        public DbSet<Book> Books { get; set; }
     }
 }
