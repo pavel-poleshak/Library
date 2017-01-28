@@ -8,8 +8,11 @@
 <h2>Index</h2>
 @ViewBag.Message
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-3">
         @Html.ActionLink("Добавить книгу", "New", "Book", null, new { @class = "btn btn-primary" })
+    </div>
+    <div class="col-md-3">
+        @Html.ActionLink("Удалить", "Delete", "Book", null, new { @class = "btn btn-primary" })
     </div>
 </div>
 <hr />

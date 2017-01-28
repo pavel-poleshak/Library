@@ -43,6 +43,10 @@ namespace Library.Controllers
            
 
         }
+        public ActionResult Delete()
+        {
+            return View();
+        }
 
     }
 }
