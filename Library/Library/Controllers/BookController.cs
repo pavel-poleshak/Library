@@ -37,9 +37,11 @@ namespace Library.Controllers
             {
                 db.Books.Add(book);
                 db.SaveChanges();
-                return View("Index");
+               
             }
-            
+            return Redirect("/Book/Index");
+           
+
         }
 
     }
