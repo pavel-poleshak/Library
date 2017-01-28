@@ -7,8 +7,14 @@
 
 <h2>Index</h2>
 @ViewBag.Message
-
-<table class="table striped-table">
+<div class="row">
+    <div class="col-xs-12 col-md-8">
+        
+        @Html.ActionLink("Main", "Index", "Home", null, new {@class ="btn btn-primary"} )
+    </div>
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+</div>
+<table class="table table-striped">
     <tr>
         <th>Id</th>
         <th>Name</th>

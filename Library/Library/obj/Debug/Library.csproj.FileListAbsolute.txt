@@ -48,3 +48,4 @@ D:\GitHub\Library\Library\Library\bin\EntityFramework.dll
 D:\GitHub\Library\Library\Library\bin\EntityFramework.SqlServer.dll
 D:\GitHub\Library\Library\Library\bin\EntityFramework.xml
 D:\GitHub\Library\Library\Library\bin\EntityFramework.SqlServer.xml
+D:\GitHub\Library\Library\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
