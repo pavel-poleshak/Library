@@ -26,11 +26,6 @@ namespace Library.Controllers
 
             return View();
         }
-        public ActionResult Book()
-        {
-            ViewBag.Message = "Your Book page.";
-
-            return View();
-        }
+       
     }
 }
