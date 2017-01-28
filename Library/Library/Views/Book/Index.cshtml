@@ -1,4 +1,4 @@
-﻿@model Library.Models.Book
+﻿@model IEnumerable<Library.Models.Book>
 
 @{
     ViewBag.Title = "Index";
@@ -7,4 +7,24 @@
 
 <h2>Index</h2>
 @ViewBag.Message
+
+<table class="table striped-table">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+    </tr>
+    @foreach (var book in Model)
+    {
+        <tr>
+            <td>@book.Id</td>
+            <td>@book.Name</td>
+            <td>@book.Description</td>
+            <td>@book.Price</td>
+        </tr>
+    }
+
+</table>
+
 
