@@ -1,0 +1,3 @@
+*.mdf
+Library/Library/App_Data/BookContext_log.ldf
+*.mdf
