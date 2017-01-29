@@ -1,4 +1,2 @@
 *.mdf
-Library/Library/App_Data/BookContext_log.ldf
-*.mdf
-Library/Library/App_Data/BookContext.mdf
+*.dll
