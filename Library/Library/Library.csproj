@@ -133,6 +133,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701290947293_InitialCreate.cs" />
+    <Compile Include="Migrations\201701290947293_InitialCreate.Designer.cs">
+      <DependentUpon>201701290947293_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701290958440_SampleMigrations.cs" />
+    <Compile Include="Migrations\201701290958440_SampleMigrations.Designer.cs">
+      <DependentUpon>201701290958440_SampleMigrations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\BookContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -172,7 +181,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Book\Index.cshtml" />
     <Content Include="Views\Books\Create.cshtml" />
     <Content Include="Views\Books\Delete.cshtml" />
     <Content Include="Views\Books\Details.cshtml" />
@@ -189,6 +197,14 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201701290947293_InitialCreate.resx">
+      <DependentUpon>201701290947293_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701290958440_SampleMigrations.resx">
+      <DependentUpon>201701290958440_SampleMigrations.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

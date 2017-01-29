@@ -48,4 +48,6 @@ D:\GitHub\Library\Library\Library\bin\EntityFramework.dll
 D:\GitHub\Library\Library\Library\bin\EntityFramework.SqlServer.dll
 D:\GitHub\Library\Library\Library\bin\EntityFramework.xml
 D:\GitHub\Library\Library\Library\bin\EntityFramework.SqlServer.xml
-D:\GitHub\Library\Library\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+D:\GitHub\Library\Library\Library\obj\Debug\Library.Migrations.InitialCreate.resources
+D:\GitHub\Library\Library\Library\obj\Debug\Library.csproj.GenerateResource.Cache
+D:\GitHub\Library\Library\Library\obj\Debug\Library.Migrations.SampleMigrations.resources
